@@ -10,4 +10,6 @@ Notes
         at least one program that contains at least one instance
         of every one of the following limits... 31 significant
         initial characters in an external identifier" (N2176,
-        5.2.4.1 Translation limits).
+        5.2.4.1 Translation limits). An identifier containing
+        other than digits, letters, and underscore may not be
+        portable (N2176, 6.4.2.1 General: Semantics).
