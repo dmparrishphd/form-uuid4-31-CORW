@@ -1,0 +1,33 @@
+The layout of a canonically formatted UUID may be represented as
+    0         1   _    _2         3
+    01234567-9012-N567-M012-456789012345
+    
+For UUID4, N = 4 and M in ( 8 9 A B ).
+
+We remap M as follows:
+
+    8 : E
+    9 : F
+    A : A
+    B : B
+
+We group the digits as follows:
+                  
+    0         1   _    _2         3
+    01234567-9012-N567-M012-456789012345
+    00000000 1111 2333 4555 666666666666
+    
+Given a UUID4, we may represent it in the form
+
+    m012456789012345012345679012567
+    4555666666666666000000001111333
+    
+where m is the result of applying the remapping (above) to M
+and where, within each group, the order of digits is
+maintained.
+
+We call this new form UUID4-31. A UUID4 in this form has 31
+digits. The UUID version information is not stored.
+
+Note that there is exactly one canonical UUID form for each
+string in UUID4-31 form.
