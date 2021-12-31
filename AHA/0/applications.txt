@@ -1,0 +1,13 @@
+Possible Applications of the UUID4-32 Format
+============================================
+
+    -   Unique identifiers for the C programming language [1]
+
+Notes
+-----
+
+[1] "The implementation shall be able to translate and execute
+        at least one program that contains at least one instance
+        of every one of the following limits... 31 significant
+        initial characters in an external identifier" (N2176,
+        5.2.4.1 Translation limits).
