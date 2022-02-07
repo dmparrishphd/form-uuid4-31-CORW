@@ -1,0 +1,31 @@
+The strUUID4ToStrUUID4_31 function
+
+Synopsis
+
+                strUUID4ToStrUUID4_31 ( u )
+    
+Description
+
+                Provided that u is a str representing a UUID
+                (Version 4) in canonical form, e.g.:
+                
+                    66f5f5cd-babd-4b85-a48d-09bafe8192eb
+                    
+                the strUUID4ToStrUUID4_31 function returns a
+                str of 31 characters. The return values of
+                strUUID4ToStrUUID4_31 have a one-to-one mapping
+                with the u-values.
+                
+                The return values are in upper case.
+                
+                The return value does not explicitly represent
+                the UUID version information (the digit 4).
+
+Return
+
+                A str of 31 characters representing the UUID.
+                
+See Also
+
+                <https://github.com/dmparrishphd/form-uuid4-31-
+                WORM/blob/main/AHA/0/strUUID4ToStrUUID4_31/0/1.py>
