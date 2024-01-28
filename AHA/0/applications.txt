@@ -1,4 +1,4 @@
-Possible Applications of the UUID4-32 Format
+Possible Applications of the UUID4-31 Format
 ============================================
 
     -   Unique identifiers for the C programming language [1]
